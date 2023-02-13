@@ -214,7 +214,9 @@ onAuthStateChanged(auth, async (user) => {
             data.innerHTML += `<p><strong>Nombre:</
             strong> ${user.displayName}</p>`;
         }
-        data.innerHTML += `<p><strong>Email:</strong> ${user.email}</p>`;
+        if(user.email != null){
+            data.innerHTML += `<p><strong>Email:</strong> ${user.email}</p>`;
+        }
         data.innerHTML += `<p><strong>Id:</strong> ${user.uid}</p>`;
 
         const docRef = doc(db, "users", user.uid);
