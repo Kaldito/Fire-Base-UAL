@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio de Sesión</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/c1d78340ca.js" crossorigin="anonymous"></script> 
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Iniciar Sesión</h1>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" />
+
+            <div class="row">
+                <div class="col-6">
+                    <button class="login" id="login-btn">Iniciar Sesion</button>
+                </div>
+                <div class="col-6">
+                    <button id="signup-btn">Registrarse</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5">
+                    <hr>
+                </div>
+                <div class="col-2" style="text-align: center;">
+                    <p>or</p>
+                </div>
+                <div class="col-5">
+                    <hr>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <div class="row">
+                    <div class="col-6">
+                        <button class="login" id="google-btn"><i class="fa-brands fa-google me-2"></i>Google</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="twitter" id="twitter-btn"><i class="fa-brands fa-twitter me-2"></i>Twitter</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button class="facebook" id="facebook-btn"><i class="fa-brands fa-facebook me-2"></i>Facebook</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="github" id="github-btn"><i class="fa-brands fa-github me-2"></i>Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="logged-in hide">
+            <div id="data"> 
+				<!-- Aqui iran los datos del usuario -->
+			</div>
+            <div id="map">
+
+            </div>
+            <div>
+                <h2 class="mb-3" style="text-align: center">Actualiza tus datos</h2>
+                <div class="row">
+                    <div class="form-floating mb-3 col-6">
+                        <input type="text" class="form-control" id="nicknameInput" placeholder="Nickname">
+                        <label for="paisInput">Nickname</label>
+                    </div>
+                    <div class="form-floating mb-3 col-6">
+                        <input type="text" class="form-control" id="paisInput" placeholder="Pais">
+                        <label for="paisInput">Pais</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn btn-outline-dark hover-shadow mb-3" id="update-data">Actualizar Datos</button>
+
+			<button id="logout-btn" style="background-color: red;">Cerrar Sesion</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="./index.js" type="module"></script>
+
+    </body>
+</html>

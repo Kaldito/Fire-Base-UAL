@@ -1,0 +1,132 @@
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+    padding: 0 2%;
+}
+
+.col-6 {
+    padding: 0 5px;
+}
+
+.center-xy {
+    display: flex;
+    align-items: center;
+}
+  
+.login-container {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.logged-in {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #4CAF50;
+    transform: translateY(-2px);
+}
+
+.login {
+    background-color: #AF4C4C;
+}
+
+.login:hover {
+    background-color: #ab3d3d;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #AF4C4C;
+    transform: translateY(-2px);
+}
+
+.facebook {
+    background-color: #00549D;
+}
+
+.facebook:hover {
+    background-color: #024682;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #00549D;
+    transform: translateY(-2px);
+}
+
+.twitter {
+    background-color: #1DA0F1;
+}
+
+.twitter:hover {
+    background-color: #1DA0F1;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px #1887cc;
+    transform: translateY(-2px);
+}
+
+.github {
+    background-color: black;
+}
+
+.github:hover {
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: translateY(-2px);
+}
+
+.hover-shadow:hover {
+    background-color: black;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 10px 0px black;
+    transform: translateY(-2px);
+}
+
+#map { 
+    height: 200px;
+    width: auto; 
+}
+
+.hide {
+    display: none;
+}
